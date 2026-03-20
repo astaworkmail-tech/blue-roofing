@@ -2,8 +2,9 @@ tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: '#1E3A5F',
+                        navy: { DEFAULT: '#1E3A5F', 900: '#0f1e36', 800: '#1E3A5F', 700: '#1e4a7a' },
                         'navy-dark': '#152842',
+                        blue: { accent: '#2563EB' },
                         electric: '#2563EB',
                         'electric-hover': '#1d4ed8',
                         dark: '#0f1d2f',
@@ -11,6 +12,8 @@ tailwind.config = {
                         gray: '#64748B'
                     },
                     fontFamily: {
+                        display: ['"Bebas Neue"', 'cursive'],
+                        body: ['Outfit', 'sans-serif'],
                         bebas: ['"Bebas Neue"', 'sans-serif'],
                         outfit: ['"Outfit"', 'sans-serif'],
                     },
@@ -147,19 +150,7 @@ tailwind.config = {
 
 document.addEventListener('DOMContentLoaded', () => {
             
-            // ===== STICKY NAVBAR LOGIC =====
-            // Purpose: Add background to navbar when scrolling down
-            const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
-
             // ===== MOBILE MENU TOGGLE =====
-            // Purpose: Show/hide mobile navigation menu
             const menuBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -176,9 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            menuBtn.addEventListener('click', toggleMenu);
+            if(menuBtn) menuBtn.addEventListener('click', toggleMenu);
             
-            // Close menu when a link is clicked
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     if(mobileMenu.classList.contains('open')) {
@@ -187,77 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
 
-            // ===== SCROLL REVEAL ANIMATIONS =====
-            // Purpose: Fade in elements as they scroll into view using Intersection Observer
-            const revealElements = document.querySelectorAll('.reveal');
-            
-            const revealOptions = {
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px"
-            };
-
-            const revealObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) {
-                        return;
-                    } else {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, revealOptions);
-
-            revealElements.forEach(el => {
-                revealObserver.observe(el);
-            });
-
-            // ===== STATS COUNTER ANIMATION =====
-            // Purpose: Animate numbers counting up when the section comes into view
-            const counters = document.querySelectorAll('.stat-counter');
-            const statsSection = document.getElementById('stats-section');
-            let hasCounted = false;
-
-            const counterObserver = new IntersectionObserver((entries) => {
-                const [entry] = entries;
-                if (entry.isIntersecting && !hasCounted) {
-                    hasCounted = true;
-                    counters.forEach(counter => {
-                        const target = parseFloat(counter.getAttribute('data-target'));
-                        const isDecimal = counter.getAttribute('data-decimal') === 'true';
-                        const duration = 2000; // 2 seconds
-                        const frameRate = 1000 / 60; // 60fps
-                        const totalFrames = Math.round(duration / frameRate);
-                        let currentFrame = 0;
-
-                        const count = setInterval(() => {
-                            currentFrame++;
-                            const progress = currentFrame / totalFrames;
-                            // easeOutQuart easing function for smooth deceleration
-                            const easeProgress = 1 - Math.pow(1 - progress, 4);
-                            
-                            let currentValue = target * easeProgress;
-                            
-                            if (isDecimal) {
-                                counter.innerText = currentValue.toFixed(1);
-                            } else {
-                                counter.innerText = Math.floor(currentValue);
-                            }
-
-                            if (currentFrame === totalFrames) {
-                                clearInterval(count);
-                                counter.innerText = isDecimal ? target.toFixed(1) : target;
-                            }
-                        }, frameRate);
-                    });
-                }
-            }, { threshold: 0.5 });
-
-            if (statsSection) {
-                counterObserver.observe(statsSection);
-            }
-
             // ===== FORM SUBMISSION HANDLER =====
-            // Standard form handler preventing default to simulate submission
             const contactForm = document.getElementById('contact-form');
             if(contactForm) {
                 contactForm.addEventListener('submit', (e) => {
@@ -269,7 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.disabled = true;
                     btn.classList.add('opacity-70');
 
-                    // Simulate API call delay
                     setTimeout(() => {
                         btn.innerHTML = '<i class="fa-solid fa-check"></i> REQUEST SENT!';
                         btn.classList.remove('bg-electric');
@@ -287,3 +206,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
         });
+
+// Sticky nav
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+      });
+      // Fade-up on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+      // Stats counter animation
+      function animateCounter(el, target, duration = 2000) {
+        let start = 0;
+        const step = target / (duration / 16);
+        const timer = setInterval(() => {
+          start += step;
+          if (start >= target) { el.textContent = target + (el.dataset.suffix || ''); clearInterval(timer); }
+          else el.textContent = Math.floor(start) + (el.dataset.suffix || '');
+        }, 16);
+      }
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            const el = e.target;
+            animateCounter(el, parseInt(el.dataset.target), 2000);
+            statsObserver.unobserve(el);
+          }
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('[data-target]').forEach(el => statsObserver.observe(el));
