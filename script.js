@@ -286,29 +286,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            // ===== FLOATING CHAT BUTTON LOGIC =====
-            // Triggers UI interaction for the requested chat placeholder div
-            const chatBtn = document.getElementById('floating-chat-btn');
-            const chatWidgetDiv = document.getElementById('blue-roofing-chat-widget');
-            
-            if(chatBtn && chatWidgetDiv) {
-                chatBtn.addEventListener('click', () => {
-                    // Stop pulse animation once clicked
-                    chatBtn.classList.remove('chat-pulse');
-                    
-                    // Toggle icon
-                    const icon = chatBtn.querySelector('i');
-                    if(icon.classList.contains('fa-comment-dots')) {
-                        icon.classList.remove('fa-comment-dots');
-                        icon.classList.add('fa-xmark');
-                        // Placeholder logic to show user interaction
-                        chatWidgetDiv.innerHTML = '<div class="fixed bottom-24 right-6 w-80 h-96 bg-white rounded-xl shadow-2xl border border-gray-200 z-40 flex flex-col overflow-hidden animate-[pulse_0.5s_ease-out]"><div class="bg-navy text-white p-4 font-bebas text-xl flex justify-between items-center"><span>Blue Roofing Support</span></div><div class="flex-1 p-4 bg-light flex flex-col justify-end"><div class="bg-gray-200 text-navy p-3 rounded-lg rounded-bl-none text-sm w-3/4 mb-4">Hi! How can we help you with your roof today?</div></div><div class="p-3 bg-white border-t border-gray-200"><input type="text" placeholder="Type a message..." class="w-full bg-light border border-gray-200 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-electric"></div></div>';
-                    } else {
-                        icon.classList.remove('fa-xmark');
-                        icon.classList.add('fa-comment-dots');
-                        chatWidgetDiv.innerHTML = ''; // Clear widget
-                    }
-                });
-            }
-
         });
