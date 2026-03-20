@@ -1,0 +1,119 @@
+/* ========================================================================== */
+        /* CUSTOM CSS & ANIMATIONS                                                    */
+        /* Custom styling that extends beyond basic Tailwind utilities                */
+        /* ========================================================================== */
+        
+        /* Base typography overrides */
+        body {
+            font-family: 'Outfit', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            color: #1E3A5F;
+            background-color: #F8FAFC;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        /* Scroll Reveal Animation Classes */
+        /* Elements start hidden and translated down, JS adds 'active' class */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+
+        /* Service Card Hover Effects */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(30, 58, 95, 0.1), 0 10px 10px -5px rgba(30, 58, 95, 0.04);
+        }
+
+        .service-card:hover .service-icon {
+            background-color: #2563EB;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Process Timeline CSS Line */
+        .process-line::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            left: 24px; /* Center of the 48px icon */
+            width: 2px;
+            background: #E2E8F0;
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .process-line::after {
+                top: 24px;
+                left: 50px;
+                right: 0;
+                bottom: auto;
+                width: auto;
+                height: 2px;
+            }
+            .process-item:last-child .process-line::after {
+                display: none;
+            }
+        }
+
+        /* Image Gallery Hover Overlay */
+        .gallery-item-overlay {
+            background: linear-gradient(to top, rgba(30, 58, 95, 0.9) 0%, rgba(30, 58, 95, 0) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .group:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        /* Floating Chat Button Animation */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
+            100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+        }
+        .chat-pulse {
+            animation: pulse-ring 2s infinite;
+        }
+        
+        /* Mobile Menu Transitions */
+        #mobile-menu {
+            transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        #mobile-menu.open {
+            max-height: 500px;
+            opacity: 1;
+        }
+
+        /* Navbar Sticky State */
+        #navbar {
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+        #navbar.scrolled {
+            background-color: #1E3A5F;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
