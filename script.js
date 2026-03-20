@@ -191,15 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     setTimeout(() => {
                         btn.innerHTML = '<i class="fa-solid fa-check"></i> REQUEST SENT!';
-                        btn.classList.remove('bg-electric');
-                        btn.classList.add('bg-green-500');
+                        btn.style.backgroundColor = '#22c55e'; // green-500
                         contactForm.reset();
                         
                         setTimeout(() => {
                             btn.innerHTML = originalText;
                             btn.disabled = false;
-                            btn.classList.remove('opacity-70', 'bg-green-500');
-                            btn.classList.add('bg-electric');
+                            btn.classList.remove('opacity-70');
+                            btn.style.backgroundColor = '#2563EB'; // electric
                         }, 3000);
                     }, 1500);
                 });
@@ -210,7 +209,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // Sticky nav
       window.addEventListener('scroll', () => {
         const nav = document.querySelector('nav');
-        if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        if (nav) {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+            if(window.scrollY > 50) {
+                nav.style.backgroundColor = 'rgba(15,30,54,0.97)';
+            } else {
+                nav.style.backgroundColor = 'transparent';
+            }
+        }
       });
       // Fade-up on scroll
       const observer = new IntersectionObserver((entries) => {
