@@ -33,63 +33,63 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden" style="background-color:#0f1e36;color:#F8FAFC;font-family:'Outfit',sans-serif;margin:0;padding:0;">
 
     <!-- ============================================================================ -->
     <!-- HEADER / NAVIGATION: Sticky top bar with logo, links, and mobile menu toggle -->
     <!-- ============================================================================ -->
-    <nav id="navbar" class="fixed w-full top-0 z-50 py-4 transition-all duration-300 border-b border-white/10">
+    <nav id="navbar" class="fixed w-full top-0 z-50 py-4 transition-all duration-300 border-b border-white/10" style="position:fixed;top:0;left:0;right:0;z-index:1000;background-color:transparent;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12 flex justify-between items-center">
             
             <!-- Logo -->
             <a href="#" class="flex items-center gap-2 group">
                 <i class="fa-solid fa-house-chimney text-electric text-3xl group-hover:scale-110 transition-transform"></i>
                 <div class="flex flex-col leading-none">
-                    <span class="font-bebas text-3xl text-white tracking-widest leading-none">BLUE<span class="text-electric">ROOFING</span></span>
-                    <span class="text-white/70 text-[10px] uppercase tracking-[0.2em] font-bold">Pensacola, FL</span>
+                    <span class="font-bebas text-3xl tracking-widest leading-none" style="color:#F8FAFC;">BLUE<span class="text-electric">ROOFING</span></span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold" style="color:#F8FAFC;">Pensacola, FL</span>
                 </div>
             </a>
 
             <!-- Desktop Nav -->
             <div class="hidden lg:flex items-center gap-8">
-                <a href="#services" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Services</a>
-                <a href="#why-us" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Why Us</a>
-                <a href="#process" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Process</a>
-                <a href="#reviews" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Reviews</a>
-                <a href="#gallery" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Gallery</a>
+                <a href="#services" class="hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider" style="color:#F8FAFC;">Services</a>
+                <a href="#why-us" class="hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider" style="color:#F8FAFC;">Why Us</a>
+                <a href="#process" class="hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider" style="color:#F8FAFC;">Process</a>
+                <a href="#reviews" class="hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider" style="color:#F8FAFC;">Reviews</a>
+                <a href="#gallery" class="hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider" style="color:#F8FAFC;">Gallery</a>
             </div>
 
             <!-- Contact & CTA (Desktop) -->
             <div class="hidden lg:flex items-center gap-6">
-                <a href="tel:8505550192" class="flex items-center gap-2 text-white hover:text-electric transition-colors">
+                <a href="tel:8505550192" class="flex items-center gap-2 hover:text-electric transition-colors" style="color:#F8FAFC;">
                     <i class="fa-solid fa-phone text-electric"></i>
                     <span class="font-bold font-bebas text-xl tracking-wider">(850) 555-0192</span>
                 </a>
-                <a href="#contact" class="bg-electric hover:bg-white text-white hover:text-navy px-6 py-3 rounded font-bold uppercase tracking-wide text-sm transition-all duration-300 border-2 border-electric hover:border-white shadow-lg shadow-electric/30">
+                <a href="#contact" class="px-6 py-3 rounded font-bold uppercase tracking-wide text-sm transition-all duration-300 shadow-lg" style="background-color:#2563EB;color:#ffffff;">
                     Get Free Estimate
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="lg:hidden text-white text-2xl p-2 focus:outline-none" aria-label="Toggle Menu">
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl p-2 focus:outline-none" aria-label="Toggle Menu" style="color:#F8FAFC;">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="lg:hidden bg-navy-dark w-full absolute top-full left-0 shadow-xl border-t border-white/10">
+        <div id="mobile-menu" class="lg:hidden w-full absolute top-full left-0 shadow-xl border-t border-white/10" style="background-color:#0f1e36;">
             <div class="container mx-auto px-4 py-6 flex flex-col gap-4">
-                <a href="#services" class="mobile-link text-white text-lg font-medium border-b border-white/10 pb-2">Services</a>
-                <a href="#why-us" class="mobile-link text-white text-lg font-medium border-b border-white/10 pb-2">Why Us</a>
-                <a href="#process" class="mobile-link text-white text-lg font-medium border-b border-white/10 pb-2">Process</a>
-                <a href="#reviews" class="mobile-link text-white text-lg font-medium border-b border-white/10 pb-2">Reviews</a>
-                <a href="#gallery" class="mobile-link text-white text-lg font-medium border-b border-white/10 pb-2">Gallery</a>
+                <a href="#services" class="mobile-link text-lg font-medium border-b border-white/10 pb-2" style="color:#F8FAFC;">Services</a>
+                <a href="#why-us" class="mobile-link text-lg font-medium border-b border-white/10 pb-2" style="color:#F8FAFC;">Why Us</a>
+                <a href="#process" class="mobile-link text-lg font-medium border-b border-white/10 pb-2" style="color:#F8FAFC;">Process</a>
+                <a href="#reviews" class="mobile-link text-lg font-medium border-b border-white/10 pb-2" style="color:#F8FAFC;">Reviews</a>
+                <a href="#gallery" class="mobile-link text-lg font-medium border-b border-white/10 pb-2" style="color:#F8FAFC;">Gallery</a>
                 <div class="pt-4 flex flex-col gap-4">
-                    <a href="tel:8505550192" class="flex items-center gap-3 text-white">
+                    <a href="tel:8505550192" class="flex items-center gap-3" style="color:#F8FAFC;">
                         <i class="fa-solid fa-phone text-electric text-xl"></i>
                         <span class="font-bebas text-2xl tracking-wider">(850) 555-0192</span>
                     </a>
-                    <a href="#contact" class="mobile-link bg-electric text-white text-center py-4 rounded font-bold uppercase tracking-wide">
+                    <a href="#contact" class="mobile-link text-center py-4 rounded font-bold uppercase tracking-wide" style="background-color:#2563EB;color:#ffffff;">
                         Get Free Estimate
                     </a>
                 </div>
@@ -99,40 +99,39 @@
 
     <!-- ============================================================================ -->
     <!-- HERO SECTION: Main landing area with headline, subtext, and primary CTA      -->
-    <!-- Mobile Padding: Safe areas ensure H1 is never clipped by viewport edges      -->
     <!-- ============================================================================ -->
-    <section class="relative min-h-[90vh] flex items-center bg-hero-pattern bg-cover bg-center bg-no-repeat pt-24" data-section="hero">
+    <section class="relative min-h-[90vh] flex items-center bg-cover bg-center bg-no-repeat pt-24" data-section="hero" style="background: linear-gradient(135deg, #0f1e36 0%, #1E3A5F 50%, #0f2a4a 100%); min-height:100vh; display:flex; align-items:center; position:relative;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10 py-16 md:py-24">
             <div class="max-w-4xl fade-up">
-                <div class="inline-block bg-electric/20 border border-electric/50 text-white px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm">
+                <div class="inline-block bg-electric/20 border border-electric/50 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm" style="color:#F8FAFC;">
                     <i class="fa-solid fa-star text-yellow-400 mr-1"></i> Pensacola's #1 Rated Roofing Company
                 </div>
                 
-                <h1 class="font-bebas text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white leading-[0.9] mb-6 drop-shadow-lg">
+                <h1 class="font-bebas text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] mb-6 drop-shadow-lg" style="color:#F8FAFC;">
                     We Don't Just Fix Roofs.<br>
                     <span class="text-electric">We Protect Homes.</span>
                 </h1>
                 
-                <p class="text-lg md:text-xl text-white/90 mb-10 max-w-2xl font-light leading-relaxed">
+                <p class="text-lg md:text-xl mb-10 max-w-2xl font-light leading-relaxed" style="color:#F8FAFC;">
                     Florida weather is unforgiving. Your roof shouldn't be a gamble. Get premium materials, flawless installation, and a lifetime warranty from Pensacola's most trusted local experts.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="bg-electric hover:bg-electric-hover text-white px-8 py-4 rounded font-bold uppercase tracking-wider text-center transition-all shadow-lg shadow-electric/40 flex items-center justify-center gap-2">
+                    <a href="#contact" class="px-8 py-4 rounded font-bold uppercase tracking-wider text-center transition-all shadow-lg flex items-center justify-center gap-2" style="background-color:#2563EB;color:#ffffff;">
                         Get a Free Estimate <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#services" class="bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 px-8 py-4 rounded font-bold uppercase tracking-wider text-center transition-all flex items-center justify-center">
+                    <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-8 py-4 rounded font-bold uppercase tracking-wider text-center transition-all flex items-center justify-center" style="color:#F8FAFC;">
                         Explore Services
                     </a>
                 </div>
                 
-                <div class="mt-12 flex items-center gap-4 text-white/80 text-sm font-medium">
+                <div class="mt-12 flex items-center gap-4 text-sm font-medium" style="color:#F8FAFC;">
                     <div class="flex -space-x-3">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-10 h-10 rounded-full border-2 border-navy">
                         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-10 h-10 rounded-full border-2 border-navy">
                         <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Customer" class="w-10 h-10 rounded-full border-2 border-navy">
                     </div>
-                    <p>Joined by <strong class="text-white">500+</strong> happy homeowners.</p>
+                    <p>Joined by <strong style="color:#F8FAFC;">500+</strong> happy homeowners.</p>
                 </div>
             </div>
         </div>
@@ -140,7 +139,7 @@
         <!-- Shape Divider -->
         <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0">
             <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-light"></path>
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#0d1a2e"></path>
             </svg>
         </div>
     </section>
@@ -148,15 +147,15 @@
     <!-- ============================================================================ -->
     <!-- TRUST BAR: Logos of partners and certifications                              -->
     <!-- ============================================================================ -->
-    <section class="bg-light py-8 border-b border-gray-200" data-section="trust">
+    <section class="py-8 border-b border-gray-200" data-section="trust" style="background-color:#0d1a2e;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
-            <p class="text-center text-sm font-bold text-gray uppercase tracking-widest mb-6">Certified & Trusted By</p>
+            <p class="text-center text-sm font-bold uppercase tracking-widest mb-6" style="color:#F8FAFC;">Certified & Trusted By</p>
             <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <h3 class="font-bebas text-3xl text-navy">GAF Master Elite</h3>
-                <h3 class="font-bebas text-3xl text-navy">Owens Corning</h3>
-                <h3 class="font-bebas text-3xl text-navy">BBB A+ Rated</h3>
-                <h3 class="font-bebas text-3xl text-navy">HomeAdvisor Pro</h3>
-                <h3 class="font-bebas text-3xl text-navy">CertainTeed</h3>
+                <h3 class="font-bebas text-3xl" style="color:#F8FAFC;">GAF Master Elite</h3>
+                <h3 class="font-bebas text-3xl" style="color:#F8FAFC;">Owens Corning</h3>
+                <h3 class="font-bebas text-3xl" style="color:#F8FAFC;">BBB A+ Rated</h3>
+                <h3 class="font-bebas text-3xl" style="color:#F8FAFC;">HomeAdvisor Pro</h3>
+                <h3 class="font-bebas text-3xl" style="color:#F8FAFC;">CertainTeed</h3>
             </div>
         </div>
     </section>
@@ -164,78 +163,78 @@
     <!-- ============================================================================ -->
     <!-- SERVICES GRID: 6 Cards displaying core offerings                             -->
     <!-- ============================================================================ -->
-    <section id="services" class="py-20 md:py-32 bg-white" data-section="services">
+    <section id="services" class="py-20 md:py-32" data-section="services" style="background-color:#0f1e36;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             
             <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-                <h4 class="text-electric font-bold tracking-widest uppercase mb-2">Our Expertise</h4>
-                <h2 class="font-bebas text-5xl md:text-6xl text-navy mb-6 leading-none">Complete Roofing Solutions</h2>
-                <p class="text-gray text-lg">From minor leaks to full replacements, our certified crews handle every aspect of your roofing system with military precision.</p>
+                <h4 class="text-electric font-bold tracking-widest uppercase mb-2" style="color:#F8FAFC;">Our Expertise</h4>
+                <h2 class="font-bebas text-5xl md:text-6xl mb-6 leading-none" style="color:#F8FAFC;">Complete Roofing Solutions</h2>
+                <p class="text-lg" style="color:#F8FAFC;">From minor leaks to full replacements, our certified crews handle every aspect of your roofing system with military precision.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-1 relative overflow-hidden group">
+                <div class="service-card p-8 fade-up reveal-delay-1 relative overflow-hidden group" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-house"></i>
                     </div>
-                    <h3 class="font-bebas text-3xl text-navy mb-3 z-10 relative">Residential Roofing</h3>
-                    <p class="text-gray mb-6 z-10 relative">Architectural shingles, metal, and tile roofing options tailored to boost your home's curb appeal and defense.</p>
+                    <h3 class="font-bebas text-3xl mb-3 z-10 relative" style="color:#F8FAFC;">Residential Roofing</h3>
+                    <p class="mb-6 z-10 relative" style="color:#F8FAFC;">Architectural shingles, metal, and tile roofing options tailored to boost your home's curb appeal and defense.</p>
                     <a href="#contact" class="text-electric font-bold uppercase text-sm tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all z-10 relative">
                         Learn More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-2 relative overflow-hidden group">
+                <div class="service-card p-8 fade-up reveal-delay-2 relative overflow-hidden group" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-building"></i>
                     </div>
-                    <h3 class="font-bebas text-3xl text-navy mb-3 z-10 relative">Commercial Roofing</h3>
-                    <p class="text-gray mb-6 z-10 relative">TPO, EPDM, and modified bitumen flat roof systems designed for energy efficiency and minimal business disruption.</p>
+                    <h3 class="font-bebas text-3xl mb-3 z-10 relative" style="color:#F8FAFC;">Commercial Roofing</h3>
+                    <p class="mb-6 z-10 relative" style="color:#F8FAFC;">TPO, EPDM, and modified bitumen flat roof systems designed for energy efficiency and minimal business disruption.</p>
                     <a href="#contact" class="text-electric font-bold uppercase text-sm tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all z-10 relative">
                         Learn More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-3 relative overflow-hidden group">
+                <div class="service-card p-8 fade-up reveal-delay-3 relative overflow-hidden group" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-hammer"></i>
                     </div>
-                    <h3 class="font-bebas text-3xl text-navy mb-3 z-10 relative">Emergency Repair</h3>
-                    <p class="text-gray mb-6 z-10 relative">Rapid response teams ready 24/7 to tarp, secure, and permanently fix leaks before they cause structural damage.</p>
+                    <h3 class="font-bebas text-3xl mb-3 z-10 relative" style="color:#F8FAFC;">Emergency Repair</h3>
+                    <p class="mb-6 z-10 relative" style="color:#F8FAFC;">Rapid response teams ready 24/7 to tarp, secure, and permanently fix leaks before they cause structural damage.</p>
                     <a href="#contact" class="text-electric font-bold uppercase text-sm tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all z-10 relative">
                         Learn More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-1 relative overflow-hidden group">
+                <div class="service-card p-8 fade-up reveal-delay-1 relative overflow-hidden group" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-cloud-bolt"></i>
                     </div>
-                    <h3 class="font-bebas text-3xl text-navy mb-3 z-10 relative">Storm Response</h3>
-                    <p class="text-gray mb-6 z-10 relative">Hurricane and hail damage specialists. We assist with insurance claims to ensure you get the coverage you deserve.</p>
+                    <h3 class="font-bebas text-3xl mb-3 z-10 relative" style="color:#F8FAFC;">Storm Response</h3>
+                    <p class="mb-6 z-10 relative" style="color:#F8FAFC;">Hurricane and hail damage specialists. We assist with insurance claims to ensure you get the coverage you deserve.</p>
                     <a href="#contact" class="text-electric font-bold uppercase text-sm tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all z-10 relative">
                         Learn More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-2 relative overflow-hidden group">
+                <div class="service-card p-8 fade-up reveal-delay-2 relative overflow-hidden group" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-ruler-combined"></i>
                     </div>
-                    <h3 class="font-bebas text-3xl text-navy mb-3 z-10 relative">New Installation</h3>
-                    <p class="text-gray mb-6 z-10 relative">Building a new home? We partner with contractors and homeowners for flawless initial roof installations.</p>
+                    <h3 class="font-bebas text-3xl mb-3 z-10 relative" style="color:#F8FAFC;">New Installation</h3>
+                    <p class="mb-6 z-10 relative" style="color:#F8FAFC;">Building a new home? We partner with contractors and homeowners for flawless initial roof installations.</p>
                     <a href="#contact" class="text-electric font-bold uppercase text-sm tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all z-10 relative">
                         Learn More <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-3 relative overflow-hidden group">
+                <div class="service-card p-8 fade-up reveal-delay-3 relative overflow-hidden group" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-droplet"></i>
                     </div>
-                    <h3 class="font-bebas text-3xl text-navy mb-3 z-10 relative">Seamless Gutters</h3>
-                    <p class="text-gray mb-6 z-10 relative">Custom-fit aluminum gutter systems designed to perfectly manage Florida downpours and protect your foundation.</p>
+                    <h3 class="font-bebas text-3xl mb-3 z-10 relative" style="color:#F8FAFC;">Seamless Gutters</h3>
+                    <p class="mb-6 z-10 relative" style="color:#F8FAFC;">Custom-fit aluminum gutter systems designed to perfectly manage Florida downpours and protect your foundation.</p>
                     <a href="#contact" class="text-electric font-bold uppercase text-sm tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all z-10 relative">
                         Learn More <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -248,7 +247,7 @@
     <!-- ============================================================================ -->
     <!-- WHY CHOOSE US: 3 Column value proposition section                            -->
     <!-- ============================================================================ -->
-    <section id="why-us" class="py-20 md:py-32 bg-navy text-white relative overflow-hidden" data-section="why-us">
+    <section id="why-us" class="py-20 md:py-32 relative overflow-hidden" data-section="why-us" style="background-color:#0f1e36;">
         <div class="absolute top-0 right-0 w-64 h-64 bg-electric/20 rounded-full blur-3xl -mr-32 -mt-32"></div>
         <div class="absolute bottom-0 left-0 w-80 h-80 bg-electric/10 rounded-full blur-3xl -ml-40 -mb-40"></div>
 
@@ -256,45 +255,45 @@
             <div class="flex flex-col lg:flex-row gap-16 items-center">
                 
                 <div class="lg:w-1/2 fade-up">
-                    <h4 class="text-electric font-bold tracking-widest uppercase mb-2">The Blue Roofing Difference</h4>
-                    <h2 class="font-bebas text-5xl md:text-6xl mb-6 leading-none">Built Tough For Florida Weather.</h2>
-                    <p class="text-white/80 text-lg mb-8">We don't cut corners because in Pensacola, a weak roof is a disaster waiting to happen. We use specialized installation techniques designed specifically for high-wind environments.</p>
+                    <h4 class="text-electric font-bold tracking-widest uppercase mb-2" style="color:#F8FAFC;">The Blue Roofing Difference</h4>
+                    <h2 class="font-bebas text-5xl md:text-6xl mb-6 leading-none" style="color:#F8FAFC;">Built Tough For Florida Weather.</h2>
+                    <p class="text-lg mb-8" style="color:#F8FAFC;">We don't cut corners because in Pensacola, a weak roof is a disaster waiting to happen. We use specialized installation techniques designed specifically for high-wind environments.</p>
                     
                     <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3 text-lg">
+                        <li class="flex items-center gap-3 text-lg" style="color:#F8FAFC;">
                             <i class="fa-solid fa-check-circle text-electric text-xl"></i> Fully Licensed & Insured (CCC1334567)
                         </li>
-                        <li class="flex items-center gap-3 text-lg">
+                        <li class="flex items-center gap-3 text-lg" style="color:#F8FAFC;">
                             <i class="fa-solid fa-check-circle text-electric text-xl"></i> 50-Year Material Warranties Available
                         </li>
-                        <li class="flex items-center gap-3 text-lg">
+                        <li class="flex items-center gap-3 text-lg" style="color:#F8FAFC;">
                             <i class="fa-solid fa-check-circle text-electric text-xl"></i> Zero-Mess Property Guarantee
                         </li>
                     </ul>
                     
-                    <a href="tel:8505550192" class="inline-flex items-center gap-3 bg-white text-navy px-8 py-4 rounded font-bold uppercase tracking-wider transition-transform hover:scale-105">
-                        <i class="fa-solid fa-phone-volume text-electric"></i> Call Now: (850) 555-0192
+                    <a href="tel:8505550192" class="inline-flex items-center gap-3 px-8 py-4 rounded font-bold uppercase tracking-wider transition-transform hover:scale-105" style="background-color:#2563EB;color:#ffffff;">
+                        <i class="fa-solid fa-phone-volume text-white"></i> Call Now: (850) 555-0192
                     </a>
                 </div>
 
                 <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
                     
-                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 fade-up reveal-delay-1 sm:col-span-2">
+                    <div class="p-6 fade-up reveal-delay-1 sm:col-span-2" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                         <i class="fa-solid fa-shield-halved text-4xl text-electric mb-4"></i>
-                        <h3 class="font-bebas text-3xl mb-2">Premium Materials</h3>
-                        <p class="text-white/70">We refuse to use builder-grade junk. We source top-tier architectural shingles and heavy-gauge metal capable of withstanding category 4 winds.</p>
+                        <h3 class="font-bebas text-3xl mb-2" style="color:#F8FAFC;">Premium Materials</h3>
+                        <p style="color:#F8FAFC;">We refuse to use builder-grade junk. We source top-tier architectural shingles and heavy-gauge metal capable of withstanding category 4 winds.</p>
                     </div>
                     
-                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 fade-up reveal-delay-2">
+                    <div class="p-6 fade-up reveal-delay-2" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                         <i class="fa-solid fa-clock text-4xl text-electric mb-4"></i>
-                        <h3 class="font-bebas text-3xl mb-2">On-Time Execution</h3>
-                        <p class="text-white/70">When we give you a timeline, we stick to it. Most standard residential replacements are completed in just one day.</p>
+                        <h3 class="font-bebas text-3xl mb-2" style="color:#F8FAFC;">On-Time Execution</h3>
+                        <p style="color:#F8FAFC;">When we give you a timeline, we stick to it. Most standard residential replacements are completed in just one day.</p>
                     </div>
                     
-                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 fade-up reveal-delay-3">
+                    <div class="p-6 fade-up reveal-delay-3" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                         <i class="fa-solid fa-medal text-4xl text-electric mb-4"></i>
-                        <h3 class="font-bebas text-3xl mb-2">Certified Crews</h3>
-                        <p class="text-white/70">Our installers aren't day laborers; they are highly trained, manufacturer-certified roofing technicians.</p>
+                        <h3 class="font-bebas text-3xl mb-2" style="color:#F8FAFC;">Certified Crews</h3>
+                        <p style="color:#F8FAFC;">Our installers aren't day laborers; they are highly trained, manufacturer-certified roofing technicians.</p>
                     </div>
 
                 </div>
@@ -305,43 +304,43 @@
     <!-- ============================================================================ -->
     <!-- PROCESS SECTION: Step-by-step horizontal/vertical timeline                   -->
     <!-- ============================================================================ -->
-    <section id="process" class="py-20 md:py-32 bg-light" data-section="process">
+    <section id="process" class="py-20 md:py-32" data-section="process" style="background-color:#0d1a2e;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             
             <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-                <h4 class="text-electric font-bold tracking-widest uppercase mb-2">How It Works</h4>
-                <h2 class="font-bebas text-5xl md:text-6xl text-navy mb-6 leading-none">Our Hassle-Free Process</h2>
-                <p class="text-gray text-lg">Getting a new roof shouldn't be stressful. We've streamlined our operation to make it as transparent and easy for you as possible.</p>
+                <h4 class="text-electric font-bold tracking-widest uppercase mb-2" style="color:#F8FAFC;">How It Works</h4>
+                <h2 class="font-bebas text-5xl md:text-6xl mb-6 leading-none" style="color:#F8FAFC;">Our Hassle-Free Process</h2>
+                <p class="text-lg" style="color:#F8FAFC;">Getting a new roof shouldn't be stressful. We've streamlined our operation to make it as transparent and easy for you as possible.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4 relative">
                 
                 <div class="process-item relative fade-up reveal-delay-1">
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
-                        <div class="w-12 h-12 rounded-full bg-navy text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light">1</div>
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light" style="background-color:#2563EB;color:#ffffff;">1</div>
                         <div class="md:text-center md:mt-6 w-full">
-                            <h3 class="font-bebas text-2xl text-navy mb-2">Free Inspection</h3>
-                            <p class="text-gray text-sm">We perform a comprehensive drone and manual inspection of your roof system.</p>
+                            <h3 class="font-bebas text-2xl mb-2" style="color:#F8FAFC;">Free Inspection</h3>
+                            <p class="text-sm" style="color:#F8FAFC;">We perform a comprehensive drone and manual inspection of your roof system.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="process-item relative fade-up reveal-delay-2">
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
-                        <div class="w-12 h-12 rounded-full bg-electric text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light">2</div>
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light" style="background-color:#2563EB;color:#ffffff;">2</div>
                         <div class="md:text-center md:mt-6 w-full">
-                            <h3 class="font-bebas text-2xl text-navy mb-2">Detailed Proposal</h3>
-                            <p class="text-gray text-sm">You receive a transparent quote with exact material specifications and no hidden fees.</p>
+                            <h3 class="font-bebas text-2xl mb-2" style="color:#F8FAFC;">Detailed Proposal</h3>
+                            <p class="text-sm" style="color:#F8FAFC;">You receive a transparent quote with exact material specifications and no hidden fees.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="process-item relative fade-up reveal-delay-3">
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
-                        <div class="w-12 h-12 rounded-full bg-navy text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light">3</div>
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light" style="background-color:#2563EB;color:#ffffff;">3</div>
                         <div class="md:text-center md:mt-6 w-full">
-                            <h3 class="font-bebas text-2xl text-navy mb-2">Expert Execution</h3>
-                            <p class="text-gray text-sm">Our crew arrives on time, protects your landscaping, and installs your roof flawlessly.</p>
+                            <h3 class="font-bebas text-2xl mb-2" style="color:#F8FAFC;">Expert Execution</h3>
+                            <p class="text-sm" style="color:#F8FAFC;">Our crew arrives on time, protects your landscaping, and installs your roof flawlessly.</p>
                         </div>
                     </div>
                 </div>
@@ -350,8 +349,8 @@
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
                         <div class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light"><i class="fa-solid fa-check"></i></div>
                         <div class="md:text-center md:mt-6 w-full">
-                            <h3 class="font-bebas text-2xl text-navy mb-2">Final Walkthrough</h3>
-                            <p class="text-gray text-sm">We clean up every nail and perform a final quality check with you to ensure 100% satisfaction.</p>
+                            <h3 class="font-bebas text-2xl mb-2" style="color:#F8FAFC;">Final Walkthrough</h3>
+                            <p class="text-sm" style="color:#F8FAFC;">We clean up every nail and perform a final quality check with you to ensure 100% satisfaction.</p>
                         </div>
                     </div>
                 </div>
@@ -363,7 +362,7 @@
     <!-- ============================================================================ -->
     <!-- STATS COUNTERS: Animated numbers triggered on scroll                         -->
     <!-- ============================================================================ -->
-    <section class="py-16 bg-electric text-white" id="stats-section">
+    <section class="py-16 text-white" id="stats-section" style="background-color:#0d1a2e;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
                 
@@ -371,28 +370,28 @@
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
                         <span class="stat-counter" data-target="500">0</span>+
                     </div>
-                    <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Roofs Replaced</p>
+                    <p class="uppercase tracking-wider text-sm font-semibold" style="color:#F8FAFC;">Roofs Replaced</p>
                 </div>
                 
                 <div class="p-4 fade-up reveal-delay-1">
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
                         <span class="stat-counter" data-target="15">0</span>
                     </div>
-                    <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Years Experience</p>
+                    <p class="uppercase tracking-wider text-sm font-semibold" style="color:#F8FAFC;">Years Experience</p>
                 </div>
                 
                 <div class="p-4 fade-up reveal-delay-2">
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
                         <span class="stat-counter" data-target="98">0</span>%
                     </div>
-                    <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Satisfaction</p>
+                    <p class="uppercase tracking-wider text-sm font-semibold" style="color:#F8FAFC;">Satisfaction</p>
                 </div>
                 
                 <div class="p-4 fade-up reveal-delay-3 border-r-0">
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
                         <span class="stat-counter" data-target="4" data-suffix=".9">0</span>
                     </div>
-                    <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Star Rating</p>
+                    <p class="uppercase tracking-wider text-sm font-semibold" style="color:#F8FAFC;">Star Rating</p>
                 </div>
 
             </div>
@@ -402,61 +401,61 @@
     <!-- ============================================================================ -->
     <!-- TESTIMONIALS: Customer reviews in a 3-column layout                          -->
     <!-- ============================================================================ -->
-    <section id="reviews" class="py-20 md:py-32 bg-white" data-section="testimonials">
+    <section id="reviews" class="py-20 md:py-32" data-section="testimonials" style="background-color:#0f1e36;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             
             <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
-                <h4 class="text-electric font-bold tracking-widest uppercase mb-2">Client Success</h4>
-                <h2 class="font-bebas text-5xl md:text-6xl text-navy mb-6 leading-none">Don't Just Take Our Word For It</h2>
+                <h4 class="text-electric font-bold tracking-widest uppercase mb-2" style="color:#F8FAFC;">Client Success</h4>
+                <h2 class="font-bebas text-5xl md:text-6xl mb-6 leading-none" style="color:#F8FAFC;">Don't Just Take Our Word For It</h2>
                 <div class="flex justify-center gap-1 text-yellow-400 text-2xl mb-4">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
-                <p class="text-gray text-lg">Based on over 150+ verified Google Reviews from homeowners in Escambia and Santa Rosa counties.</p>
+                <p class="text-lg" style="color:#F8FAFC;">Based on over 150+ verified Google Reviews from homeowners in Escambia and Santa Rosa counties.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <div class="bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-1 relative">
-                    <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-navy/5"></i>
-                    <div class="flex gap-1 text-yellow-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-navy italic mb-6">"After Hurricane Sally, finding a roofer was a nightmare. Blue Roofing was the only one that actually showed up when they said they would. They handled the insurance paperwork and installed a beautiful architectural roof in one day. Phenomenal service."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center font-bebas text-xl">SM</div>
-                        <div>
-                            <h4 class="font-bold text-navy">Sarah M.</h4>
-                            <p class="text-xs text-gray uppercase tracking-wider">Gulf Breeze, FL</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-navy p-8 rounded-xl border border-navy shadow-xl fade-up reveal-delay-2 relative transform md:-translate-y-4">
+                <div class="fade-up reveal-delay-1 relative" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
                     <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-white/5"></i>
                     <div class="flex gap-1 text-yellow-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-white italic mb-6">"Their crew operates like a well-oiled machine. They stripped my old roof, fixed rotten decking, and put the new metal roof on incredibly fast. The best part? They swept my yard for nails three times. Highly recommend Blue Roofing!"</p>
+                    <p class="italic mb-6" style="color:#F8FAFC;">"After Hurricane Sally, finding a roofer was a nightmare. Blue Roofing was the only one that actually showed up when they said they would. They handled the insurance paperwork and installed a beautiful architectural roof in one day. Phenomenal service."</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-electric text-white rounded-full flex items-center justify-center font-bebas text-xl">JD</div>
+                        <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bebas text-xl" style="background-color:#2563EB;">SM</div>
                         <div>
-                            <h4 class="font-bold text-white">James D.</h4>
-                            <p class="text-xs text-white/70 uppercase tracking-wider">Pensacola, FL</p>
+                            <h4 class="font-bold" style="color:#F8FAFC;">Sarah M.</h4>
+                            <p class="text-xs uppercase tracking-wider" style="color:#F8FAFC;">Gulf Breeze, FL</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-3 relative">
-                    <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-navy/5"></i>
+                <div class="shadow-xl fade-up reveal-delay-2 relative transform md:-translate-y-4" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
+                    <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-white/5"></i>
                     <div class="flex gap-1 text-yellow-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-navy italic mb-6">"I had a nagging leak that two other companies couldn't fix. The tech from Blue Roofing found it in 10 minutes (it was flashing around the chimney). Fair price, quick fix, hasn't leaked a drop since. These guys are honest pros."</p>
+                    <p class="italic mb-6" style="color:#F8FAFC;">"Their crew operates like a well-oiled machine. They stripped my old roof, fixed rotten decking, and put the new metal roof on incredibly fast. The best part? They swept my yard for nails three times. Highly recommend Blue Roofing!"</p>
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center font-bebas text-xl">TR</div>
+                        <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bebas text-xl" style="background-color:#2563EB;">JD</div>
                         <div>
-                            <h4 class="font-bold text-navy">Tom R.</h4>
-                            <p class="text-xs text-gray uppercase tracking-wider">Navarre, FL</p>
+                            <h4 class="font-bold" style="color:#F8FAFC;">James D.</h4>
+                            <p class="text-xs uppercase tracking-wider" style="color:#F8FAFC;">Pensacola, FL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-up reveal-delay-3 relative" style="background-color:#1E3A5F;border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:32px;">
+                    <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-white/5"></i>
+                    <div class="flex gap-1 text-yellow-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="italic mb-6" style="color:#F8FAFC;">"I had a nagging leak that two other companies couldn't fix. The tech from Blue Roofing found it in 10 minutes (it was flashing around the chimney). Fair price, quick fix, hasn't leaked a drop since. These guys are honest pros."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 text-white rounded-full flex items-center justify-center font-bebas text-xl" style="background-color:#2563EB;">TR</div>
+                        <div>
+                            <h4 class="font-bold" style="color:#F8FAFC;">Tom R.</h4>
+                            <p class="text-xs uppercase tracking-wider" style="color:#F8FAFC;">Navarre, FL</p>
                         </div>
                     </div>
                 </div>
@@ -468,47 +467,47 @@
     <!-- ============================================================================ -->
     <!-- GALLERY GRID: Masonry-style image grid of completed work                     -->
     <!-- ============================================================================ -->
-    <section id="gallery" class="py-20 bg-light" data-section="gallery">
+    <section id="gallery" class="py-20" data-section="gallery" style="background-color:#0d1a2e;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             <div class="text-center max-w-3xl mx-auto mb-12 fade-up">
-                <h4 class="text-electric font-bold tracking-widest uppercase mb-2">Our Work</h4>
-                <h2 class="font-bebas text-5xl md:text-6xl text-navy leading-none">Recent Projects</h2>
+                <h4 class="text-electric font-bold tracking-widest uppercase mb-2" style="color:#F8FAFC;">Our Work</h4>
+                <h2 class="font-bebas text-5xl md:text-6xl leading-none" style="color:#F8FAFC;">Recent Projects</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up">
                     <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="New house roof installation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
-                        <h4 class="text-white font-bebas text-2xl tracking-wide">Architectural Shingle</h4>
-                        <p class="text-white/80 text-sm">Pensacola Beach</p>
+                        <h4 class="font-bebas text-2xl tracking-wide" style="color:#F8FAFC;">Architectural Shingle</h4>
+                        <p class="text-sm" style="color:#F8FAFC;">Pensacola Beach</p>
                     </div>
                 </div>
                 <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up reveal-delay-1">
                     <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roof construction workers" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
-                        <h4 class="text-white font-bebas text-2xl tracking-wide">Commercial Flat Roof</h4>
-                        <p class="text-white/80 text-sm">Downtown Pensacola</p>
+                        <h4 class="font-bebas text-2xl tracking-wide" style="color:#F8FAFC;">Commercial Flat Roof</h4>
+                        <p class="text-sm" style="color:#F8FAFC;">Downtown Pensacola</p>
                     </div>
                 </div>
                 <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up reveal-delay-2">
                     <img src="https://images.unsplash.com/photo-1615800098779-1be32e60cca3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern home roof" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
-                        <h4 class="text-white font-bebas text-2xl tracking-wide">Standing Seam Metal</h4>
-                        <p class="text-white/80 text-sm">Gulf Breeze</p>
+                        <h4 class="font-bebas text-2xl tracking-wide" style="color:#F8FAFC;">Standing Seam Metal</h4>
+                        <p class="text-sm" style="color:#F8FAFC;">Gulf Breeze</p>
                     </div>
                 </div>
                 <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg md:col-span-2 lg:col-span-2 fade-up">
                     <img src="https://images.unsplash.com/photo-1543888514-610ebec716cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Large residential roof" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
-                        <h4 class="text-white font-bebas text-3xl tracking-wide">Storm Damage Restoration</h4>
-                        <p class="text-white/80 text-sm">Navarre, Complete Replacement</p>
+                        <h4 class="font-bebas text-3xl tracking-wide" style="color:#F8FAFC;">Storm Damage Restoration</h4>
+                        <p class="text-sm" style="color:#F8FAFC;">Navarre, Complete Replacement</p>
                     </div>
                 </div>
                 <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up reveal-delay-1">
                     <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gutter installation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
-                        <h4 class="text-white font-bebas text-2xl tracking-wide">Seamless Gutters</h4>
-                        <p class="text-white/80 text-sm">Cantonment</p>
+                        <h4 class="font-bebas text-2xl tracking-wide" style="color:#F8FAFC;">Seamless Gutters</h4>
+                        <p class="text-sm" style="color:#F8FAFC;">Cantonment</p>
                     </div>
                 </div>
             </div>
@@ -518,77 +517,77 @@
     <!-- ============================================================================ -->
     <!-- CTA & CONTACT FORM: Dual column with strong call to action and form          -->
     <!-- ============================================================================ -->
-    <section id="contact" class="relative py-20 md:py-32 bg-cta-pattern bg-cover bg-center bg-fixed" data-section="cta">
+    <section id="contact" class="relative py-20 md:py-32 bg-cta-pattern bg-cover bg-center bg-fixed" data-section="cta" style="background-color:#2563EB;">
         <div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
-            <div class="flex flex-col lg:flex-row gap-12 bg-navy/95 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+            <div class="flex flex-col lg:flex-row gap-12 rounded-2xl overflow-hidden shadow-2xl" style="background-color:#0f1e36; border:1px solid rgba(37,99,235,0.25);">
                 
                 <!-- CTA Content -->
                 <div class="lg:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
-                    <h4 class="text-electric font-bold tracking-widest uppercase mb-2">Secure Your Home Today</h4>
-                    <h2 class="font-bebas text-5xl md:text-6xl text-white mb-6 leading-none">Ready for a Roof You Can Trust?</h2>
-                    <p class="text-white/80 text-lg mb-8">Stop worrying about the next storm. Contact us today for a free, no-obligation drone inspection and estimate. Our experts will give you an honest assessment of your roof's condition.</p>
+                    <h4 class="text-electric font-bold tracking-widest uppercase mb-2" style="color:#F8FAFC;">Secure Your Home Today</h4>
+                    <h2 class="font-bebas text-5xl md:text-6xl mb-6 leading-none" style="color:#F8FAFC;">Ready for a Roof You Can Trust?</h2>
+                    <p class="text-lg mb-8" style="color:#F8FAFC;">Stop worrying about the next storm. Contact us today for a free, no-obligation drone inspection and estimate. Our experts will give you an honest assessment of your roof's condition.</p>
                     
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-electric/20 rounded-full flex items-center justify-center text-electric text-xl border border-electric/30">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl border border-electric/30" style="background-color:rgba(37,99,235,0.2);color:#2563EB;">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <p class="text-white/60 text-sm uppercase tracking-wider font-bold">Call Us 24/7</p>
-                                <a href="tel:8505550192" class="text-white font-bebas text-3xl hover:text-electric transition-colors">(850) 555-0192</a>
+                                <p class="text-sm uppercase tracking-wider font-bold" style="color:#F8FAFC;">Call Us 24/7</p>
+                                <a href="tel:8505550192" class="font-bebas text-3xl hover:text-electric transition-colors" style="color:#F8FAFC;">(850) 555-0192</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-electric/20 rounded-full flex items-center justify-center text-electric text-xl border border-electric/30">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl border border-electric/30" style="background-color:rgba(37,99,235,0.2);color:#2563EB;">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <p class="text-white/60 text-sm uppercase tracking-wider font-bold">Email Us</p>
-                                <a href="mailto:hello@blueroofing.com" class="text-white text-lg hover:text-electric transition-colors">hello@blueroofing.com</a>
+                                <p class="text-sm uppercase tracking-wider font-bold" style="color:#F8FAFC;">Email Us</p>
+                                <a href="mailto:hello@blueroofing.com" class="text-lg hover:text-electric transition-colors" style="color:#F8FAFC;">hello@blueroofing.com</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-electric/20 rounded-full flex items-center justify-center text-electric text-xl border border-electric/30">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl border border-electric/30" style="background-color:rgba(37,99,235,0.2);color:#2563EB;">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <p class="text-white/60 text-sm uppercase tracking-wider font-bold">Service Area</p>
-                                <p class="text-white text-lg">Pensacola & 50 Mile Radius</p>
+                                <p class="text-sm uppercase tracking-wider font-bold" style="color:#F8FAFC;">Service Area</p>
+                                <p class="text-lg" style="color:#F8FAFC;">Pensacola & 50 Mile Radius</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="lg:w-1/2 bg-white p-8 md:p-12 lg:p-16">
-                    <h3 class="font-bebas text-4xl text-navy mb-2">Request Free Estimate</h3>
-                    <p class="text-gray mb-8">Fill out the form below and our team will contact you within 24 hours.</p>
+                <div class="lg:w-1/2 p-8 md:p-12 lg:p-16" style="background-color:#1E3A5F;">
+                    <h3 class="font-bebas text-4xl mb-2" style="color:#F8FAFC;">Request Free Estimate</h3>
+                    <p class="mb-8" style="color:#F8FAFC;">Fill out the form below and our team will contact you within 24 hours.</p>
                     
                     <form id="contact-form" class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="firstName" class="block text-sm font-bold text-navy mb-1 uppercase tracking-wider">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required class="w-full bg-light border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors">
+                                <label for="firstName" class="block text-sm font-bold mb-1 uppercase tracking-wider" style="color:#F8FAFC;">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-electric transition-colors" style="background-color:#0f1e36; color:#F8FAFC; border:1px solid rgba(37,99,235,0.25);">
                             </div>
                             <div>
-                                <label for="lastName" class="block text-sm font-bold text-navy mb-1 uppercase tracking-wider">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required class="w-full bg-light border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors">
+                                <label for="lastName" class="block text-sm font-bold mb-1 uppercase tracking-wider" style="color:#F8FAFC;">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-electric transition-colors" style="background-color:#0f1e36; color:#F8FAFC; border:1px solid rgba(37,99,235,0.25);">
                             </div>
                         </div>
                         
                         <div>
-                            <label for="phone" class="block text-sm font-bold text-navy mb-1 uppercase tracking-wider">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required class="w-full bg-light border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors">
+                            <label for="phone" class="block text-sm font-bold mb-1 uppercase tracking-wider" style="color:#F8FAFC;">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-electric transition-colors" style="background-color:#0f1e36; color:#F8FAFC; border:1px solid rgba(37,99,235,0.25);">
                         </div>
 
                         <div>
-                            <label for="email" class="block text-sm font-bold text-navy mb-1 uppercase tracking-wider">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full bg-light border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors">
+                            <label for="email" class="block text-sm font-bold mb-1 uppercase tracking-wider" style="color:#F8FAFC;">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-electric transition-colors" style="background-color:#0f1e36; color:#F8FAFC; border:1px solid rgba(37,99,235,0.25);">
                         </div>
 
                         <div>
-                            <label for="service" class="block text-sm font-bold text-navy mb-1 uppercase tracking-wider">Service Needed</label>
-                            <select id="service" name="service" class="w-full bg-light border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors appearance-none">
+                            <label for="service" class="block text-sm font-bold mb-1 uppercase tracking-wider" style="color:#F8FAFC;">Service Needed</label>
+                            <select id="service" name="service" class="w-full rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-electric transition-colors appearance-none" style="background-color:#0f1e36; color:#F8FAFC; border:1px solid rgba(37,99,235,0.25);">
                                 <option value="replacement">Full Roof Replacement</option>
                                 <option value="repair">Roof Repair</option>
                                 <option value="commercial">Commercial Roofing</option>
@@ -598,14 +597,14 @@
                         </div>
 
                         <div>
-                            <label for="message" class="block text-sm font-bold text-navy mb-1 uppercase tracking-wider">Additional Details</label>
-                            <textarea id="message" name="message" rows="3" class="w-full bg-light border border-gray-200 rounded px-4 py-3 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-colors"></textarea>
+                            <label for="message" class="block text-sm font-bold mb-1 uppercase tracking-wider" style="color:#F8FAFC;">Additional Details</label>
+                            <textarea id="message" name="message" rows="3" class="w-full rounded px-4 py-3 focus:outline-none focus:ring-1 focus:ring-electric transition-colors" style="background-color:#0f1e36; color:#F8FAFC; border:1px solid rgba(37,99,235,0.25);"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-electric hover:bg-navy text-white font-bold uppercase tracking-widest py-4 rounded transition-colors duration-300 shadow-lg mt-4">
+                        <button type="submit" class="w-full font-bold uppercase tracking-widest py-4 rounded transition-colors duration-300 shadow-lg mt-4" style="background-color:#2563EB;color:#ffffff;">
                             Send Request
                         </button>
-                        <p class="text-xs text-center text-gray mt-2"><i class="fa-solid fa-lock mr-1"></i> Your information is secure and will not be shared.</p>
+                        <p class="text-xs text-center mt-2" style="color:#F8FAFC;"><i class="fa-solid fa-lock mr-1"></i> Your information is secure and will not be shared.</p>
                     </form>
                 </div>
                 
@@ -616,7 +615,7 @@
     <!-- ============================================================================ -->
     <!-- FOOTER: Comprehensive site footer with links and company info                -->
     <!-- ============================================================================ -->
-    <footer class="bg-navy-dark text-white pt-20 pb-10 border-t border-white/5">
+    <footer class="pt-20 pb-10" style="background-color:#080f1c;border-top:1px solid rgba(37,99,235,0.2);">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 
@@ -624,55 +623,55 @@
                     <a href="#" class="flex items-center gap-2 mb-6 group">
                         <i class="fa-solid fa-house-chimney text-electric text-3xl"></i>
                         <div class="flex flex-col leading-none">
-                            <span class="font-bebas text-3xl text-white tracking-widest leading-none">BLUE<span class="text-electric">ROOFING</span></span>
+                            <span class="font-bebas text-3xl tracking-widest leading-none" style="color:#F8FAFC;">BLUE<span class="text-electric">ROOFING</span></span>
                         </div>
                     </a>
-                    <p class="text-white/60 mb-6 text-sm leading-relaxed">Pensacola's premier roofing contractor specializing in high-wind resistant systems for residential and commercial properties.</p>
+                    <p class="mb-6 text-sm leading-relaxed" style="color:#F8FAFC;">Pensacola's premier roofing contractor specializing in high-wind resistant systems for residential and commercial properties.</p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-white hover:bg-electric hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-white hover:bg-electric hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-white hover:bg-electric hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-electric transition-colors" style="color:#F8FAFC;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-electric transition-colors" style="color:#F8FAFC;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-electric transition-colors" style="color:#F8FAFC;"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="font-bebas text-2xl tracking-wide mb-6">Quick Links</h4>
-                    <ul class="space-y-3 text-white/70 text-sm">
-                        <li><a href="#services" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> All Services</a></li>
-                        <li><a href="#why-us" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> About Us</a></li>
-                        <li><a href="#process" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Our Process</a></li>
-                        <li><a href="#reviews" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Testimonials</a></li>
-                        <li><a href="#gallery" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Project Gallery</a></li>
+                    <h4 class="font-bebas text-2xl tracking-wide mb-6" style="color:#F8FAFC;">Quick Links</h4>
+                    <ul class="space-y-3 text-sm" style="color:#F8FAFC;">
+                        <li><a href="#services" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> All Services</a></li>
+                        <li><a href="#why-us" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> About Us</a></li>
+                        <li><a href="#process" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Our Process</a></li>
+                        <li><a href="#reviews" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Testimonials</a></li>
+                        <li><a href="#gallery" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Project Gallery</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="font-bebas text-2xl tracking-wide mb-6">Our Services</h4>
-                    <ul class="space-y-3 text-white/70 text-sm">
-                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Residential Roofing</a></li>
-                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Commercial Roofing</a></li>
-                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Roof Replacement</a></li>
-                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Emergency Repair</a></li>
-                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Storm Damage</a></li>
+                    <h4 class="font-bebas text-2xl tracking-wide mb-6" style="color:#F8FAFC;">Our Services</h4>
+                    <ul class="space-y-3 text-sm" style="color:#F8FAFC;">
+                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Residential Roofing</a></li>
+                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Commercial Roofing</a></li>
+                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Roof Replacement</a></li>
+                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Emergency Repair</a></li>
+                        <li><a href="#" class="hover:text-electric transition-colors flex items-center gap-2" style="color:#F8FAFC;"><i class="fa-solid fa-angle-right text-xs"></i> Storm Damage</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="font-bebas text-2xl tracking-wide mb-6">Contact Us</h4>
-                    <ul class="space-y-4 text-white/70 text-sm">
-                        <li class="flex items-start gap-3">
+                    <h4 class="font-bebas text-2xl tracking-wide mb-6" style="color:#F8FAFC;">Contact Us</h4>
+                    <ul class="space-y-4 text-sm" style="color:#F8FAFC;">
+                        <li class="flex items-start gap-3" style="color:#F8FAFC;">
                             <i class="fa-solid fa-location-dot mt-1 text-electric"></i>
                             <span>123 Coastal Hwy,<br>Pensacola, FL 32501</span>
                         </li>
-                        <li class="flex items-center gap-3">
+                        <li class="flex items-center gap-3" style="color:#F8FAFC;">
                             <i class="fa-solid fa-phone text-electric"></i>
-                            <a href="tel:8505550192" class="hover:text-white transition-colors">(850) 555-0192</a>
+                            <a href="tel:8505550192" class="transition-colors" style="color:#F8FAFC;">(850) 555-0192</a>
                         </li>
-                        <li class="flex items-center gap-3">
+                        <li class="flex items-center gap-3" style="color:#F8FAFC;">
                             <i class="fa-solid fa-envelope text-electric"></i>
-                            <a href="mailto:hello@blueroofing.com" class="hover:text-white transition-colors">hello@blueroofing.com</a>
+                            <a href="mailto:hello@blueroofing.com" class="transition-colors" style="color:#F8FAFC;">hello@blueroofing.com</a>
                         </li>
-                        <li class="flex items-center gap-3">
+                        <li class="flex items-center gap-3" style="color:#F8FAFC;">
                             <i class="fa-solid fa-clock text-electric"></i>
                             <span>Mon-Sat: 7am - 6pm<br>24/7 Emergency Service</span>
                         </li>
@@ -681,11 +680,11 @@
 
             </div>
 
-            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs" style="color:#F8FAFC;">
                 <p>&copy; 2026 Blue Roofing. All rights reserved. State Lic #CCC1334567.</p>
                 <div class="flex gap-4">
-                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="transition-colors" style="color:#F8FAFC;">Privacy Policy</a>
+                    <a href="#" class="transition-colors" style="color:#F8FAFC;">Terms of Service</a>
                 </div>
             </div>
         </div>
