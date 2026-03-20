@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -11,12 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
+    
+
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Tailwind CSS (via CDN for immediate usage) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
 
     
 
@@ -38,7 +38,7 @@
     <!-- ============================================================================ -->
     <!-- HEADER / NAVIGATION: Sticky top bar with logo, links, and mobile menu toggle -->
     <!-- ============================================================================ -->
-    <header id="navbar" class="fixed w-full top-0 z-50 py-4 transition-all duration-300 border-b border-white/10">
+    <nav id="navbar" class="fixed w-full top-0 z-50 py-4 transition-all duration-300 border-b border-white/10">
         <div class="container mx-auto px-4 md:px-8 lg:px-12 flex justify-between items-center">
             
             <!-- Logo -->
@@ -51,13 +51,13 @@
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-8">
+            <div class="hidden lg:flex items-center gap-8">
                 <a href="#services" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Services</a>
                 <a href="#why-us" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Why Us</a>
                 <a href="#process" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Process</a>
                 <a href="#reviews" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Reviews</a>
                 <a href="#gallery" class="text-white hover:text-electric font-medium transition-colors text-sm uppercase tracking-wider">Gallery</a>
-            </nav>
+            </div>
 
             <!-- Contact & CTA (Desktop) -->
             <div class="hidden lg:flex items-center gap-6">
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- ============================================================================ -->
     <!-- HERO SECTION: Main landing area with headline, subtext, and primary CTA      -->
@@ -103,7 +103,7 @@
     <!-- ============================================================================ -->
     <section class="relative min-h-[90vh] flex items-center bg-hero-pattern bg-cover bg-center bg-no-repeat pt-24" data-section="hero">
         <div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10 py-16 md:py-24">
-            <div class="max-w-4xl reveal">
+            <div class="max-w-4xl fade-up">
                 <div class="inline-block bg-electric/20 border border-electric/50 text-white px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm">
                     <i class="fa-solid fa-star text-yellow-400 mr-1"></i> Pensacola's #1 Rated Roofing Company
                 </div>
@@ -152,7 +152,6 @@
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             <p class="text-center text-sm font-bold text-gray uppercase tracking-widest mb-6">Certified & Trusted By</p>
             <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <!-- Placeholder text formatted to look like logos -->
                 <h3 class="font-bebas text-3xl text-navy">GAF Master Elite</h3>
                 <h3 class="font-bebas text-3xl text-navy">Owens Corning</h3>
                 <h3 class="font-bebas text-3xl text-navy">BBB A+ Rated</h3>
@@ -168,7 +167,7 @@
     <section id="services" class="py-20 md:py-32 bg-white" data-section="services">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
                 <h4 class="text-electric font-bold tracking-widest uppercase mb-2">Our Expertise</h4>
                 <h2 class="font-bebas text-5xl md:text-6xl text-navy mb-6 leading-none">Complete Roofing Solutions</h2>
                 <p class="text-gray text-lg">From minor leaks to full replacements, our certified crews handle every aspect of your roofing system with military precision.</p>
@@ -176,8 +175,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Service 1 -->
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-1 relative overflow-hidden group">
+                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-1 relative overflow-hidden group">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-house"></i>
                     </div>
@@ -188,8 +186,7 @@
                     </a>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-2 relative overflow-hidden group">
+                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-2 relative overflow-hidden group">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-building"></i>
                     </div>
@@ -200,8 +197,7 @@
                     </a>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-3 relative overflow-hidden group">
+                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-3 relative overflow-hidden group">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-hammer"></i>
                     </div>
@@ -212,8 +208,7 @@
                     </a>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-1 relative overflow-hidden group">
+                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-1 relative overflow-hidden group">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-cloud-bolt"></i>
                     </div>
@@ -224,8 +219,7 @@
                     </a>
                 </div>
 
-                <!-- Service 5 -->
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-2 relative overflow-hidden group">
+                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-2 relative overflow-hidden group">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-ruler-combined"></i>
                     </div>
@@ -236,8 +230,7 @@
                     </a>
                 </div>
 
-                <!-- Service 6 -->
-                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-3 relative overflow-hidden group">
+                <div class="service-card bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-3 relative overflow-hidden group">
                     <div class="service-icon w-16 h-16 bg-white rounded-full flex items-center justify-center text-electric text-2xl shadow-sm mb-6 transition-all duration-300 z-10 relative">
                         <i class="fa-solid fa-droplet"></i>
                     </div>
@@ -256,14 +249,13 @@
     <!-- WHY CHOOSE US: 3 Column value proposition section                            -->
     <!-- ============================================================================ -->
     <section id="why-us" class="py-20 md:py-32 bg-navy text-white relative overflow-hidden" data-section="why-us">
-        <!-- Background accents -->
         <div class="absolute top-0 right-0 w-64 h-64 bg-electric/20 rounded-full blur-3xl -mr-32 -mt-32"></div>
         <div class="absolute bottom-0 left-0 w-80 h-80 bg-electric/10 rounded-full blur-3xl -ml-40 -mb-40"></div>
 
         <div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
             <div class="flex flex-col lg:flex-row gap-16 items-center">
                 
-                <div class="lg:w-1/2 reveal">
+                <div class="lg:w-1/2 fade-up">
                     <h4 class="text-electric font-bold tracking-widest uppercase mb-2">The Blue Roofing Difference</h4>
                     <h2 class="font-bebas text-5xl md:text-6xl mb-6 leading-none">Built Tough For Florida Weather.</h2>
                     <p class="text-white/80 text-lg mb-8">We don't cut corners because in Pensacola, a weak roof is a disaster waiting to happen. We use specialized installation techniques designed specifically for high-wind environments.</p>
@@ -287,19 +279,19 @@
 
                 <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
                     
-                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 reveal reveal-delay-1 sm:col-span-2">
+                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 fade-up reveal-delay-1 sm:col-span-2">
                         <i class="fa-solid fa-shield-halved text-4xl text-electric mb-4"></i>
                         <h3 class="font-bebas text-3xl mb-2">Premium Materials</h3>
                         <p class="text-white/70">We refuse to use builder-grade junk. We source top-tier architectural shingles and heavy-gauge metal capable of withstanding category 4 winds.</p>
                     </div>
                     
-                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 reveal reveal-delay-2">
+                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 fade-up reveal-delay-2">
                         <i class="fa-solid fa-clock text-4xl text-electric mb-4"></i>
                         <h3 class="font-bebas text-3xl mb-2">On-Time Execution</h3>
                         <p class="text-white/70">When we give you a timeline, we stick to it. Most standard residential replacements are completed in just one day.</p>
                     </div>
                     
-                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 reveal reveal-delay-3">
+                    <div class="bg-navy-dark p-6 rounded-xl border border-white/10 fade-up reveal-delay-3">
                         <i class="fa-solid fa-medal text-4xl text-electric mb-4"></i>
                         <h3 class="font-bebas text-3xl mb-2">Certified Crews</h3>
                         <p class="text-white/70">Our installers aren't day laborers; they are highly trained, manufacturer-certified roofing technicians.</p>
@@ -316,7 +308,7 @@
     <section id="process" class="py-20 md:py-32 bg-light" data-section="process">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
                 <h4 class="text-electric font-bold tracking-widest uppercase mb-2">How It Works</h4>
                 <h2 class="font-bebas text-5xl md:text-6xl text-navy mb-6 leading-none">Our Hassle-Free Process</h2>
                 <p class="text-gray text-lg">Getting a new roof shouldn't be stressful. We've streamlined our operation to make it as transparent and easy for you as possible.</p>
@@ -324,8 +316,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4 relative">
                 
-                <!-- Step 1 -->
-                <div class="process-item relative reveal reveal-delay-1">
+                <div class="process-item relative fade-up reveal-delay-1">
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
                         <div class="w-12 h-12 rounded-full bg-navy text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light">1</div>
                         <div class="md:text-center md:mt-6 w-full">
@@ -335,8 +326,7 @@
                     </div>
                 </div>
 
-                <!-- Step 2 -->
-                <div class="process-item relative reveal reveal-delay-2">
+                <div class="process-item relative fade-up reveal-delay-2">
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
                         <div class="w-12 h-12 rounded-full bg-electric text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light">2</div>
                         <div class="md:text-center md:mt-6 w-full">
@@ -346,8 +336,7 @@
                     </div>
                 </div>
 
-                <!-- Step 3 -->
-                <div class="process-item relative reveal reveal-delay-3">
+                <div class="process-item relative fade-up reveal-delay-3">
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
                         <div class="w-12 h-12 rounded-full bg-navy text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light">3</div>
                         <div class="md:text-center md:mt-6 w-full">
@@ -357,8 +346,7 @@
                     </div>
                 </div>
 
-                <!-- Step 4 -->
-                <div class="process-item relative reveal reveal-delay-4">
+                <div class="process-item relative fade-up reveal-delay-4">
                     <div class="process-line relative z-10 flex md:flex-col items-center gap-4 md:gap-0">
                         <div class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bebas text-2xl flex-shrink-0 z-10 shadow-lg border-4 border-light"><i class="fa-solid fa-check"></i></div>
                         <div class="md:text-center md:mt-6 w-full">
@@ -379,30 +367,30 @@
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
                 
-                <div class="p-4 reveal">
+                <div class="p-4 fade-up">
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
                         <span class="stat-counter" data-target="500">0</span>+
                     </div>
                     <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Roofs Replaced</p>
                 </div>
                 
-                <div class="p-4 reveal reveal-delay-1">
+                <div class="p-4 fade-up reveal-delay-1">
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
                         <span class="stat-counter" data-target="15">0</span>
                     </div>
                     <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Years Experience</p>
                 </div>
                 
-                <div class="p-4 reveal reveal-delay-2">
+                <div class="p-4 fade-up reveal-delay-2">
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
                         <span class="stat-counter" data-target="98">0</span>%
                     </div>
                     <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Satisfaction</p>
                 </div>
                 
-                <div class="p-4 reveal reveal-delay-3 border-r-0">
+                <div class="p-4 fade-up reveal-delay-3 border-r-0">
                     <div class="text-4xl md:text-5xl lg:text-6xl font-bebas mb-2 font-bold flex justify-center">
-                        <span class="stat-counter" data-target="4.9" data-decimal="true">0</span>
+                        <span class="stat-counter" data-target="4" data-suffix=".9">0</span>
                     </div>
                     <p class="uppercase tracking-wider text-sm font-semibold text-white/90">Star Rating</p>
                 </div>
@@ -417,7 +405,7 @@
     <section id="reviews" class="py-20 md:py-32 bg-white" data-section="testimonials">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
                 <h4 class="text-electric font-bold tracking-widest uppercase mb-2">Client Success</h4>
                 <h2 class="font-bebas text-5xl md:text-6xl text-navy mb-6 leading-none">Don't Just Take Our Word For It</h2>
                 <div class="flex justify-center gap-1 text-yellow-400 text-2xl mb-4">
@@ -428,8 +416,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- Review 1 -->
-                <div class="bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-1 relative">
+                <div class="bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-1 relative">
                     <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-navy/5"></i>
                     <div class="flex gap-1 text-yellow-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -444,8 +431,7 @@
                     </div>
                 </div>
 
-                <!-- Review 2 -->
-                <div class="bg-navy p-8 rounded-xl border border-navy shadow-xl reveal reveal-delay-2 relative transform md:-translate-y-4">
+                <div class="bg-navy p-8 rounded-xl border border-navy shadow-xl fade-up reveal-delay-2 relative transform md:-translate-y-4">
                     <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-white/5"></i>
                     <div class="flex gap-1 text-yellow-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -460,8 +446,7 @@
                     </div>
                 </div>
 
-                <!-- Review 3 -->
-                <div class="bg-light p-8 rounded-xl border border-gray-100 reveal reveal-delay-3 relative">
+                <div class="bg-light p-8 rounded-xl border border-gray-100 fade-up reveal-delay-3 relative">
                     <i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl text-navy/5"></i>
                     <div class="flex gap-1 text-yellow-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -485,46 +470,41 @@
     <!-- ============================================================================ -->
     <section id="gallery" class="py-20 bg-light" data-section="gallery">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
-            <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+            <div class="text-center max-w-3xl mx-auto mb-12 fade-up">
                 <h4 class="text-electric font-bold tracking-widest uppercase mb-2">Our Work</h4>
                 <h2 class="font-bebas text-5xl md:text-6xl text-navy leading-none">Recent Projects</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Gallery Item 1 -->
-                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg reveal">
+                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up">
                     <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="New house roof installation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
                         <h4 class="text-white font-bebas text-2xl tracking-wide">Architectural Shingle</h4>
                         <p class="text-white/80 text-sm">Pensacola Beach</p>
                     </div>
                 </div>
-                <!-- Gallery Item 2 -->
-                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg reveal reveal-delay-1">
+                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up reveal-delay-1">
                     <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roof construction workers" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
                         <h4 class="text-white font-bebas text-2xl tracking-wide">Commercial Flat Roof</h4>
                         <p class="text-white/80 text-sm">Downtown Pensacola</p>
                     </div>
                 </div>
-                <!-- Gallery Item 3 -->
-                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg reveal reveal-delay-2">
+                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up reveal-delay-2">
                     <img src="https://images.unsplash.com/photo-1615800098779-1be32e60cca3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern home roof" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
                         <h4 class="text-white font-bebas text-2xl tracking-wide">Standing Seam Metal</h4>
                         <p class="text-white/80 text-sm">Gulf Breeze</p>
                     </div>
                 </div>
-                <!-- Gallery Item 4 (Span 2 cols on tablet/desktop) -->
-                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg md:col-span-2 lg:col-span-2 reveal">
+                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg md:col-span-2 lg:col-span-2 fade-up">
                     <img src="https://images.unsplash.com/photo-1543888514-610ebec716cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Large residential roof" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
                         <h4 class="text-white font-bebas text-3xl tracking-wide">Storm Damage Restoration</h4>
                         <p class="text-white/80 text-sm">Navarre, Complete Replacement</p>
                     </div>
                 </div>
-                <!-- Gallery Item 5 -->
-                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg reveal reveal-delay-1">
+                <div class="group relative h-64 md:h-80 overflow-hidden rounded-lg fade-up reveal-delay-1">
                     <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gutter installation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 gallery-item-overlay flex flex-col justify-end p-6">
                         <h4 class="text-white font-bebas text-2xl tracking-wide">Seamless Gutters</h4>
@@ -537,7 +517,6 @@
 
     <!-- ============================================================================ -->
     <!-- CTA & CONTACT FORM: Dual column with strong call to action and form          -->
-    <!-- Includes standard form logic (no URL provided for parameters in prompt)      -->
     <!-- ============================================================================ -->
     <section id="contact" class="relative py-20 md:py-32 bg-cta-pattern bg-cover bg-center bg-fixed" data-section="cta">
         <div class="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
@@ -641,7 +620,6 @@
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 
-                <!-- Brand Info -->
                 <div>
                     <a href="#" class="flex items-center gap-2 mb-6 group">
                         <i class="fa-solid fa-house-chimney text-electric text-3xl"></i>
@@ -657,7 +635,6 @@
                     </div>
                 </div>
 
-                <!-- Quick Links -->
                 <div>
                     <h4 class="font-bebas text-2xl tracking-wide mb-6">Quick Links</h4>
                     <ul class="space-y-3 text-white/70 text-sm">
@@ -669,7 +646,6 @@
                     </ul>
                 </div>
 
-                <!-- Services -->
                 <div>
                     <h4 class="font-bebas text-2xl tracking-wide mb-6">Our Services</h4>
                     <ul class="space-y-3 text-white/70 text-sm">
@@ -681,7 +657,6 @@
                     </ul>
                 </div>
 
-                <!-- Contact -->
                 <div>
                     <h4 class="font-bebas text-2xl tracking-wide mb-6">Contact Us</h4>
                     <ul class="space-y-4 text-white/70 text-sm">
@@ -706,7 +681,6 @@
 
             </div>
 
-            <!-- Copyright Bar -->
             <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
                 <p>&copy; 2026 Blue Roofing. All rights reserved. State Lic #CCC1334567.</p>
                 <div class="flex gap-4">
@@ -727,6 +701,8 @@
     <!-- ============================================================================ -->
     <!-- JAVASCRIPT LOGIC                                                             -->
     <!-- ============================================================================ -->
+    
+
     
 <script src="https://paymegpt.com/widget.js" data-widget="8181029" async></script>
   <script src="script.js"></script>
